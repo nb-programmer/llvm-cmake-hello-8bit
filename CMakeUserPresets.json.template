@@ -29,6 +29,18 @@
             "inherits": [
                 "llvm-mos-cx16"
             ]
+        },
+        {
+            "name": "llvm-mos-sim",
+            "displayName": "LLVM-MOS Simulator-Debug",
+            "cacheVariables": {
+                "LLVM_MOS": "/opt/llvm-mos",
+                "LLVM_MOS_PLATFORM": "sim",
+                "CMAKE_BUILD_TYPE": "Debug"
+            },
+            "inherits": [
+                "llvm-mos"
+            ]
         }
     ]
 }
