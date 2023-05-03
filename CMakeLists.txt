@@ -23,11 +23,11 @@ if(LLVM_MOS)
     add_definitions(${LLVM_DEFINITIONS_LIST})
 endif()
 
-# Add the project source code
-add_subdirectory("src/")
-
 # Build the main project executable
 add_executable(${CMAKE_PROJECT_NAME} "src/main.c")
+
+# Add the project source code
+add_subdirectory("src/")
 
 # You can add custom commands to build resources and other things
 
